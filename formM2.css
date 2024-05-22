@@ -1,0 +1,160 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: "Orbitron";
+    text-decoration: none;
+}
+:root {
+    --bg-color: #081b29;
+    --second-bg-color: #112e42;
+    --text-color: #fff;
+    --main-color: #FBA0E3;
+}
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: var(--bg-color);
+    color: var(--text-color);
+}
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 98.5%;
+    padding: 2rem 9%;
+    margin: 8px 10px 8px 10px;
+    background: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+.logo {
+    font-size: 1.55rem;
+    background: linear-gradient(to right,#FF00FF, #FBA0E3, #FF00FF);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 600;
+    transition: .2s;
+}
+.logo:hover {
+    transform: scale(1.05);
+    filter: drop-shadow(5px 5px 10px rgb(234, 234, 220));
+}
+.navbar > a {
+    font-size: 1.1rem;
+    color: var(--text-color);
+    font-weight: 500;
+    margin: 0 0 0 2.5rem;
+    transition: .3s;
+}
+.navbar > a:hover, 
+.navbar > a.active {
+    transform: scale(1.05);
+    color: var(--main-color);
+    filter: drop-shadow(5px 5px 10px rgb(234, 234, 220));
+}
+#menu-icon {
+    font-size: 3.6rem;
+    color: var(--main-color);
+    cursor: pointer;
+    display: none;
+}
+.heading {
+    font-size: 5rem;
+    margin-bottom: 3rem;
+    text-align: center;
+}
+span {
+    color: var(--main-color);
+    background: linear-gradient(to right, #F25278, var(--main-color), #FF00FF);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.contact > form {
+    width: 600px;
+    text-align: center;
+}
+form > .input-box {
+    display: flex;
+    justify-content: space-between;
+}
+.input-box .input-field {
+    width: 40,50;
+}
+.field > .item {
+    width: 100%;
+    padding: 18px;
+    background: transparent;
+    border: 2px solid var(--main-color);
+    outline: none;
+    outline: none;
+    border-radius: 6px;
+    font-size: 16px;
+    background: linear-gradient(to right, #F25278, var(--main-color), #FF00FF);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin: 10px;
+}
+.field.error .item {
+    border-color: red;
+}
+.field > .item::placeholder {
+    color: #FBA0E3;
+}
+.field .error-txt {
+    font-size: 14.5px;
+    color: red;
+    text-align: left;
+    margin: -5px 0 10px 10px;
+    display: none;
+}
+.field.error .error-txt {
+    display: block;
+}
+form .textarea-field .item {
+    resize: none;
+}
+form .textarea-field .error-txt {
+    margin-top: -10px;
+}
+.btn {
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 8rem;
+    height: 3rem;
+    background: linear-gradient(to right, #FF00FF, var(--main-color), #FF00FF);
+    border: .2rem solid var(--main-color);
+    border-radius: 25px;
+    font-size: 1.2rem;
+    font-weight: 600;
+    letter-spacing: .1rem;
+    color: var(--bg-color);
+    z-index: 1;
+    overflow: hidden;
+    transition: .4s;
+}
+.btn:hover {
+    color: var(--main-color);
+}
+.btn::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: var(--bg-color);
+    z-index: -1;
+    transition: .4s;
+}
+.btn:hover::before {
+    width: 100%;
+    color: var(--main-color);
+}

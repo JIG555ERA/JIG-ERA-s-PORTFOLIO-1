@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Explore the professional portfolio of Jigar Veera, showcasing expertise in front-end development, designing, innovative projects and creative solutions. Discover a blend of expertise and talent in website creation. COntact for collaboration and opportunities.">
+        <meta property="og:title" content=" JIGAR's | PORTFOLIO">
+        <meta property="og:description" content="Professional Web Developer with expertise in front-end development, responsive design and JavaScript frameworks. Offering custom website solutions and interactive web applications. Check out my portfolio to see my work in professional, creative and latest feature websites">
+        <meta property="og:image" content="image">
+        <!-- Setting page Icon -->
+        <link rel="icon" href="COURSERA_PROJECT(J.E._ICON).jpeg" type="image/x-icon">
+        <!-- COnnecting with CSS using Stylesheet-->
+        <link rel="stylesheet" href="formM2.css">
+        <!-- Importing icons from BoxIcons -->
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+        <!-- Importing "Orbitron" font from Google fonts  -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=DotGothic16&family=Orbitron:wght@400..900&display=swap" rel="stylesheet">  
+    <title> CONTACT | ERA</title>
+</head>
+<body>
+    <header class="header">
+        <a href="PORTFOLIO(COURSERA_PROJECT).html" class="logo">Jigar</a>
+
+        <div class="bx bx-menu" id="menu-icon"></div>
+
+        <nav class="navbar">
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+    <section class="contact" id="contact">
+        <H2 class="heading">Contact<span> Me!</span></H2>
+
+        <form action="get" >
+            <div class="input-box">
+                <div class="input-field field">
+                    <input type="text" placeholder="Full Name" id="fullName" class="item" autocomplete="off">
+                    <div class="error-txt">Full name can't be blank!</div>
+                </div>
+                <div class="input-field field">
+                    <input type="email" placeholder="Email Address" id="email" class="item" autocomplete="off">
+                    <div class="error-txt email">Email can't be blank!</div>
+                </div>
+            </div>
+            <div class="input-box">
+                <div class="input-field field">
+                    <input type="number" placeholder="XX-XXXXX-XXXXX" id="phoneNumber"class="item" autocomplete="off">
+                    <div class="error-txt">Phone Number can't be blank!</div>
+                </div>
+                <div class="input-field field">
+                    <input type="text" placeholder="Subject" id="subject" class="item" autocomplete="off">
+                    <div class="error-txt">Email can't be blank!</div>
+                </div>
+            </div>
+            <div class="textarea-field field">
+                <textarea name="" id="message" cols="30" rows="10" placeholder="Enter your message" class="item" autocomplete="off"></textarea>
+                <div class="error-txt">Message can't be blank!</div>
+            </div>
+
+            <button class="btn" type="submit">Send</button>
+        </form>
+
+    </section>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="script1.js"></script>
+    
+</body>
+</html>
